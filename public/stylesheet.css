@@ -1,0 +1,67 @@
+#turkic_acceptfirst
+{
+    background-color : #cd0a0a;
+    color : #fff;
+}
+
+#turkic_workerstatus
+{
+    background-color : #E4E4E4;
+}
+
+#container
+{
+    background-color : #fff;
+    width : 500px;
+    margin : 10px auto;
+    padding : 20px;
+    font-family : Arial;
+    border : 1px solid black;
+}
+
+body
+{
+    background-color : #EFEFEF;
+}
+
+#submitbutton
+{
+    font-weight : bold;
+}
+
+#uploader
+{
+    display : none;
+}
+
+#form
+{
+    margin-top : 5px;
+}
+
+#success
+{
+    display : none;
+    background-color : #9FFFA3;
+    font-weight : bold;
+    font-size : 16px;
+    padding : 10px;
+}
+
+#working
+{
+    display : none;
+    background-color : #FFDC96;
+    font-weight : bold;
+    font-size : 16px;
+    padding : 10px;
+}
+
+#errored
+{
+    display : none;
+    background-color : #FF96B9;
+    font-weight : bold;
+    font-size : 16px;
+    padding : 10px;
+}

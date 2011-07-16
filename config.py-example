@@ -1,0 +1,22 @@
+signature   = ""
+accesskey   = ""
+sandbox     = True
+localhost   = "http://localhost/"
+database    = "mysql://root@localhost/uploadic"
+geolocation = ""
+
+# probably no need to mess below this line
+
+import os.path
+root = os.path.dirname(os.path.abspath(__file__))
+
+import logging
+logging.basicConfig(format="%(name)-15s %(message)s", level = logging.WARNING)
+logging.getLogger("vision").setLevel(logging.WARNING)
+logging.getLogger("sqlalchemy").setLevel(logging.WARNING)
+
+import multiprocessing
+processes = multiprocessing.cpu_count()
+
+import sys
+sys.path.append(root)

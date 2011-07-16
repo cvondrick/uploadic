@@ -1,0 +1,61 @@
+<!DOCTYPE html5>
+<html>
+<head>
+
+<title>Upload a Video</title>
+
+<link rel="stylesheet" type="text/css" href="turkic/stylesheet.css">
+<script src="turkic/javascript.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="javascript.js"></script>
+
+</head>
+<body>
+
+<div id="container">
+
+<h1>Upload a Video</h1>
+
+<p>In this task, we ask you to film yourself performing a couple of activities
+then upload the video to our database.</p>
+
+<p>Please perform the following activities, in any order:</p>
+
+<ul id="activities">
+
+<!-- These will be automatically populated from the javascript.js file -->
+
+</ul>
+
+<p>After filming the video, you may upload it below:</p>
+
+<div id="working">
+<!-- Only visible after use clicks Upload -->
+The video is uploading. Stand by...
+</div>
+
+<div id="success">
+<!-- Only visible after the video has finished uploading -->
+The video was successfully uploaded! 
+</div>
+
+<div id="errored">
+<!-- Only visible when the upload finished but there was an error. -->
+There was a problem uploading. Please try again.
+</div>
+
+<form target="uploader" method="post" id="form" enctype="multipart/form-data">
+<input type="file" name="video">
+<input type="submit" value="Upload Video" id="submitbutton">
+</form>
+
+<p>We take your privacy seriously. Your video will be kept confidential and
+only shared with research staff at the University of California, Irvine.</p>
+
+</div>
+
+<!-- This iframe is the upload target. -->
+<iframe id="uploader" name="uploader"></iframe>
+
+</body>
+</html>
