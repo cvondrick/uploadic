@@ -23,10 +23,16 @@ class create(LoadCommand):
         return "Create a video of you performing certain activities."
 
     def cost(self, args):
-        return 1.00
+        return 0.50
 
     def keywords(self, args):
         return "video, upload, create, you, film"
+
+    def lifetime(self, args):
+        return 1209600
+
+    def duration(self, args):
+        return 7200 * 3
 
     def __call__(self, args, group):
         if args.number < 1:
