@@ -35,6 +35,12 @@ $(document).ready(function()
 
     // create a trigger for when the form is submitted
     $("#form").submit(function() {
+        if ($("#video").val() == "")
+        {
+            window.alert("Please select a file first.");
+            return;
+        }
+
         eventlog("upload", "Starting upload");
 
         // update status for the user to know it's uploading
@@ -53,6 +59,8 @@ function uploaded()
     // the upload was complete, then redirects after 1 second to the
     // MTurk callback.
 
+    return;
+
     eventlog("upload", "Upload success");
 
     $("#working").hide();
@@ -62,7 +70,7 @@ function uploaded()
         mturk_submit(function(redirect) {
             redirect();
         });
-    }, 1000);
+    }, 100);
 }
 
 function errored(message)
